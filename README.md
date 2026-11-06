@@ -16,4 +16,14 @@ omarchy theme set mabinogion
 - Pwyll and Rhiannon at the mound
 - Blodeuwedd beneath the forest canopy
 
-Each scene is provided as a 2560×1440 PNG wallpaper and a scalable SVG source. Matching stills are in `screensaver/` for use with a screensaver or lock-screen tool. Omarchy themes provide the images; they do not configure an animated screensaver.
+Each scene is provided as a 2560×1440 PNG wallpaper and a scalable SVG source.
+
+## Animated ASCII screensaver
+
+`screensaver/mabinogion.txt` is a Braille ASCII rendering of the dragon emblem from the book spine. Omarchy's built-in screensaver animates it with its TTE effects. To use it for idle screensaver sessions:
+
+```sh
+install -Dm644 screensaver/mabinogion.txt ~/.config/omarchy/branding/screensaver.txt
+```
+
+Run `omarchy screensaver` to start it manually. The old still images have been removed.
